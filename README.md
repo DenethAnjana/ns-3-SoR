@@ -31,13 +31,13 @@ Then edit the the wscript file reside in '%ns-3-executable directory%/src/networ
         '../internet/model/ipv4-interface-address.h',
         
 Resolve the cycle referencing problem edit the wscript file reside in '%ns-3-executable directory%/src/internet/' and comment out the following lines.  
-        ##'model/udp-header.cc',
-        ##'model/tcp-header.cc',
-        #'model/ipv4-interface-address.cc',
-        ##'model/ipv4-header.cc',
-        ##'model/sor-header.cc',
-        ##'model/sor-communicaton.cc',     
-        #'model/ipv4.cc',  
+        'model/udp-header.cc',
+        'model/tcp-header.cc',
+        'model/ipv4-interface-address.cc',
+        'model/ipv4-header.cc',
+        'model/sor-header.cc',
+        'model/sor-communicaton.cc',     
+        'model/ipv4.cc',  
         
 However, for newer version (i.e., ns-3.24), you have to consider the cycle referencing of tcp-option headers and the implementation files also.
 
