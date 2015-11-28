@@ -42,6 +42,10 @@ Resolve the cycle referencing problem edit the wscript file reside in '%ns-3-exe
         
 However, for newer version (i.e., ns-3.24), you have to consider the cycle referencing of tcp-option headers and the implementation files also.
 
+        'model/tcp-option.cc',
+        'model/tcp-option-rfc793.cc',
+        'model/tcp-option-winscale.cc',
+
 
 CAUTION
 ========
