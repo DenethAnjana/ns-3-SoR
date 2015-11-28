@@ -31,6 +31,7 @@ Then edit the the wscript file reside in '%ns-3-executable directory%/src/networ
         '../internet/model/ipv4-interface-address.h',
         
 Resolve the cycle referencing problem edit the wscript file reside in '%ns-3-executable directory%/src/internet/' and comment out the following lines.  
+
         'model/udp-header.cc',
         'model/tcp-header.cc',
         'model/ipv4-interface-address.cc',
